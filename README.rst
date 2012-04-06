@@ -8,7 +8,7 @@ Rosetta Brainfuck
 do you wanna brainfuck in ShellScript?
 ======================================
 
-you cant do it!
+you can do it!
 
 ::
 

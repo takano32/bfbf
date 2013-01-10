@@ -14,7 +14,7 @@ you can do it!
 
   ./bf2sh.sh < hello.bf
 
-issueing above command, you can generate ShellScript.
+issueing above command, you can generate ShellScript to print "Hello, world!".
 
 ::
 

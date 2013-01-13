@@ -36,6 +36,13 @@ Do (snip) in Python?
 
   ./bf2py.py < hello.bf | python
 
+Do (snip) in Perl?
+====================
+
+::
+
+  ./bf2pl.pl < hello.bf | perl
+
 Do (snip) in PHP?
 =================
 

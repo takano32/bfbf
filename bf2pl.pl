@@ -13,41 +13,41 @@ EOH
 print $header;
 
 sub ch_to_code {
-	my $ch = shift;
-	switch ($ch) {
-		case '>' {
-			print '$dx++;' . "\n"
-		}
-		case '<' {
-			print '$dx--;' . "\n"
-		}
-		case '+' {
+  my $ch = shift;
+  switch ($ch) {
+    case '>' {
+      print '$dx++;' . "\n"
+    }
+    case '<' {
+      print '$dx--;' . "\n"
+    }
+    case '+' {
       print '$dseg[$dx]++;' . "\n"
-		}
-		case '-' {
+    }
+    case '-' {
       print '$dseg[$dx]--;' . "\n"
-		}
-		case '.' {
+    }
+    case '.' {
       print 'print chr($dseg[$dx]);' . "\n"
-		}
-		case ',' {
+    }
+    case ',' {
       # input from user
-		}
-		case '[' {
+    }
+    case '[' {
       print 'while ($dseg[$dx] != 0) {' . "\n"
-		}
-		case ']' {
+    }
+    case ']' {
       print '}' . "\n"
-		}
-	}
+    }
+  }
 }
 
 while (defined(my $line = <STDIN>)){
-	chomp($line);
-	for (my $i = 0; $i < length($line); $i++) {
-		my $ch = substr($line, $i, 1);
-		ch_to_code($ch);
-	}
+  chomp($line);
+  for (my $i = 0; $i < length($line); $i++) {
+    my $ch = substr($line, $i, 1);
+    ch_to_code($ch);
+  }
 }
 
 

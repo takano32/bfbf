@@ -4,10 +4,6 @@
   (line-seq
   (java.io.BufferedReader. *in* )))
 
-(defn clojurefuck
-  [char]
-  (println 1))
-
 (def pointer 0)
 
 (defn init-print []

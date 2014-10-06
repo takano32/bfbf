@@ -36,6 +36,13 @@ Do (snip) in Python?
 
   ./bf2py.py < hello.bf | python
 
+Do (snip) in Lua?
+=================
+
+::
+
+  ./bf2lua.py < hello.bf | lua
+
 Do (snip) in Perl?
 ====================
 
